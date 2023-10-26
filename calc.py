@@ -9,20 +9,13 @@ while con1=="y":
     print("Enter operation: ") #add or multiply
     op1 = str(input())
 
-    # add/addition
-    if op1 == "add" : 
+    if op1 == "add" or op1 == "addition" : # add/addition
         print("Sum: " + str(num1+num2))
-    if op1 == "addition" : 
-        print("Sum: " + str(num1+num2))
-
-    # multi/multiplication
-    if op1 == "multiply" : 
-        print("Product: " + str(num1*num2))
-    if op1 == "multiplication" : 
+    elif op1 == "multi" or op1 == "multiplication":  # multi/multiplication
         print("Product: " + str(num1*num2))
 
 
-    print("Continue? [y/n]: ") #start over?
+    print("Continue? [y/n]: ") #start over
     con1 = str(input())  #y/n
     if con1 == "y":
         print()
